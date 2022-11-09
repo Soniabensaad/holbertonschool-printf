@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 
     va_list arg; /*pointer called arg refers to each argument in turn*/
     int c = 0;
-    va_start(arg, format); /*initializes aarg to point to the first unnamed argument*/
+    va_start(arg, format); /*initializes, aarg to point to the first unnamed argument*/
     c = match_function(format, arg, st_format);
     va_end(arg);
     return (c);
