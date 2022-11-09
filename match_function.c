@@ -7,7 +7,7 @@
  */
 int match_function(const char *format, va_list arg, st_fmt st_format[])
 {
-    int i, j, k = 0, done = 0;
+    int i = 0, j, k = 0, done = 0;
     int c = 0;
     /*prints ordinary charactrs without the token % */
     for  (i = 0; format && format[i] != 0; i++)
@@ -28,7 +28,6 @@ int match_function(const char *format, va_list arg, st_fmt st_format[])
                     done = st_format[j].funct(arg);
                 /*counting the characters printed*/
                     c += done;
-                    i++;
                     break;
                 }
             }
