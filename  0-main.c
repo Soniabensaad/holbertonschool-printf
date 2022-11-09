@@ -1,7 +1,7 @@
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
-int _main(void)
+int main(void)
 {
     int x;
 
