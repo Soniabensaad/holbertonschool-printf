@@ -28,6 +28,7 @@ int match_function(const char *format, va_list arg, st_fmt st_format[])
                     done = st_format[j].funct(arg);
                 /*counting the characters printed*/
                     c += done;
+                    i++;
                     break;
                 }
             }
