@@ -9,9 +9,7 @@
  */
 int match_function(const char *format, va_list arg, st_fmt st_format[])
 {
-	int i = 0, j, k = 0, done = 0;
-	int c = 0;
-	/*prints ordinary charactrs without the token % */
+	int i = 0, j, k = 0, done = 0, c = 0;
 	for (i = 0; format && format[i] != 0; i++)
 	{
 		if (format[i] != '%')
@@ -19,22 +17,18 @@ int match_function(const char *format, va_list arg, st_fmt st_format[])
 			_putchar(format[i]);
 			c = c + 1;
 		}
-		/*the token % exists: start the conversion specificaion*/
 		else
 		{
 			for (j = 0; st_format[j].fmt; j++)
 			{
 				if (format[i + 1] == st_format[j].fmt[k])
 				{
-					/*pick element of va-list and apply the function on it */
 					done = st_format[j].funct(arg);
-					/*counting the characters printed*/
 					c += done;
 					i++;
 					break;
 				}
 			}
-			/*the token can be duplicated (w can print a special caracter)*/
 			if (st_format[j].fmt == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] != 0)
