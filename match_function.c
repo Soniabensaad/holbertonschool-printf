@@ -8,14 +8,12 @@
  * Return: the number of caracters printed
  */
 int match_function(const char *format, va_list arg, st_fmt st_format[])
-{
-	int i = 0, j, k = 0, done = 0, c = 0;
+{ int i = 0, j, k = 0, done = 0, c = 0;
+
 	for (i = 0; format && format[i] != 0; i++)
-	{
-		if (format[i] != '%')
+	{ if (format[i] != '%')
 		{
-			_putchar(format[i]);
-			c = c + 1;
+			_putchar(format[i]); c = c + 1;
 		}
 		else
 		{
@@ -23,20 +21,14 @@ int match_function(const char *format, va_list arg, st_fmt st_format[])
 			{
 				if (format[i + 1] == st_format[j].fmt[k])
 				{
-					done = st_format[j].funct(arg);
-					c += done;
-					i++;
-					break;
+					done = st_format[j].funct(arg); c += done; i++; break;
 				}
 			}
 			if (st_format[j].fmt == NULL && format[i + 1] != ' ')
 			{
 				if (format[i + 1] != 0)
 				{
-					_putchar(format[i]);
-					_putchar(format[i + 1]);
-					c = c + 2;
-					i++;
+					_putchar(format[i]); _putchar(format[i + 1]); c = c + 2; i++;
 				}
 				else
 					return (-1);
@@ -44,6 +36,5 @@ int match_function(const char *format, va_list arg, st_fmt st_format[])
 		}
 	}
 	if (format == NULL)
-		return (-1);
-	return (c);
+		return (-1); return (c);
 }

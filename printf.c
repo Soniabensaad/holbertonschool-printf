@@ -15,6 +15,7 @@ int _printf(const char *format, ...)
 
 	va_list arg;
 	int c = 0;
+	
 	va_start(arg, format);
 	c = match_function(format, arg, st_format);
 	va_end(arg);
