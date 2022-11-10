@@ -3,8 +3,6 @@
  * match_function - function that match format with printf format
  * @format: match the format with the function format
  * @arg: list of arguments prinff witll recieve
- * @st_fmt: array of char to be compared with format specifier
- * @st_format: array of functions used while printing
  * Return: the number of caracters printed
  */
 int match_function(const char *format, va_list arg, st_fmt st_format[])

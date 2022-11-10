@@ -2,7 +2,7 @@
 /**
  * _printf - a fucntion that prints a char or a string
  * @format:  a string starting with % and ends with conversion character
- * @Return: the number of character the function is printing
+ * Return: the number of character the function is printing
  */
 int _printf(const char *format, ...)
 {
