@@ -2,7 +2,7 @@
 /**
  * _printf - a fucntion that prints a char or a string
  * @format:  a string starting with % and ends with conversion character
- * @Return: return number of characters printed in the output
+ * @Return: the number of character the function is printing
  */
 int _printf(const char *format, ...)
 {
@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 
 	va_list arg;
 	int c = 0;
-	
+
 	va_start(arg, format);
 	c = match_function(format, arg, st_format);
 	va_end(arg);
