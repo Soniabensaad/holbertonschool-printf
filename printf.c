@@ -6,7 +6,6 @@
  */
 int _printf(const char *format, ...)
 {
-
 	st_fmt st_format[] = {
 		{"c", funct_char},
 		{"s", funct_string},
