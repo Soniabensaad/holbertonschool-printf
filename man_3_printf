@@ -30,16 +30,7 @@ Print a binary.
 Print reverse.
 .SH R
 Print ROT13
-.SH U
-Print an unsigned number
-.SH o
-Print Octal
-.SH x X
-Print hexadecimal
-.SH P
-Print address of a pinter
-.SH EXAMPLES
-Some examples of _printf
+
 
 _printf("String:[%s]\n", "I am a string !");
 .PP
