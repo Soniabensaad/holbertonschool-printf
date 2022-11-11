@@ -1,29 +1,38 @@
 #include "main.h"
 /**
- * print_number - prints numbers
+ * funct_integer - prints number
  * @arg: list of arguments the function prints is recieving
- * Return: return  numbers
+ * Return: return the length of integr
  */
+int funct_number(va_list arg)
 
-int print_number(va_list arg)
 {
-	long int n = va_arg(arg, int), m = 1, c = 0;
+	int n, m = 1, c = 0;
+	unsigned int k;
+
+	n = va_arg(arg, int);
 
 	if (n < 0)
 	{
-		putchar('-');
+		_putchar('-');
+		k = n * -1;
 		c++;
-		n = -n;
 	}
-	while (n / m >= 10)
-		m *= 10;
-
-	while (m > 0)
+	else
 	{
-		putchar('0' + n / m);
-		c++;
-		n %= m;
-		m /= 10;
+		k = n;
+	}
+
+	while (k / m >=10)
+	{
+		m = m * 10;
+	}
+	while (m != 0)
+	{
+		c = c + _putchar(k / m + '0');
+		k = k % m;
+		m = m / 10;
 	}
 	return (c);
 }
+

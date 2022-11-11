@@ -10,8 +10,8 @@ int _printf(const char *format, ...)
 		{"c", funct_char},
 		{"s", funct_string},
 		{"%", funct_percent},
-		{"d", funct_decimal},
-		{"i", funct_integer},
+		{"d", funct_number},
+		{"i", funct_number},
 		{NULL, NULL}};
 
 	va_list arg;

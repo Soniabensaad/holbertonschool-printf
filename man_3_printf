@@ -53,33 +53,7 @@ _printf("Negative:[%d]\n", -678925);
 .PP
 Negative:[-678925]
 
-_printf("Unsigned:[%u]\n", ui);
-.PP
-Unsigned:[984521752]
 
-_printf("Unsigned octal:[%o]\n", ui);
-.PP
-Unsigned octal:[20000001777]
-
-_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-.PP
-Unsigned hexadecimal:[800003ff, 800003FF]
-
-_printf("Character:[%c]\n", 'S');
-.PP
-Character:[S]
-
-_printf("Address:[%p]\n", addr);
-.PP
-Address:[0x7ffe637541f0]
-
-len = _printf("Percent:[%%]\n");
-.PP
-Percent:[%]
-
-_printf("Unknown:[%r]\n");
-.PP
-Len:[12]
 
 .SH SEE ALSO
 printf(), scanf(), fprintf(), sprintf(), vfprintf()
