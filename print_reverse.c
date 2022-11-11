@@ -6,18 +6,16 @@
  */
 int funct_reverse(va_list arg)
 {
-    int i, j, c = 0;
-    char *s;
-    s = va_arg (arg, char*);
-    for (i = 0; s[i] != '\0'; i++)
-    {
-        c++;
-    }
-    for (j - 1; j >= 0; j--)
-    {
-        _putchar(s[j]);
-        
-    }
-    return (c);
-
+int i, j, c = 0;
+char *s;
+s = va_arg(arg, char*);
+for (i = 0; s[i] != '\0'; i++)
+{
+c++;
+}
+for (j - 1; j >= 0; j--)
+{
+_putchar(s[j]);
+}
+return (c);
 }
