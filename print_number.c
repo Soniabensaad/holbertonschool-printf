@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * funct_integer - prints number
+ * funct_number - prints number
  * @arg: list of arguments the function prints is recieving
  * Return: return the length of integr
  */
@@ -23,7 +23,7 @@ int funct_number(va_list arg)
 		k = n;
 	}
 
-	while (k / m >=10)
+	while ((k / m) >= 10)
 	{
 		m = m * 10;
 	}
@@ -35,4 +35,5 @@ int funct_number(va_list arg)
 	}
 	return (c);
 }
+
 
