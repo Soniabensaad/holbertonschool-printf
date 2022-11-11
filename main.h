@@ -24,7 +24,7 @@ int funct_percent(va_list);
 int funct_string(va_list);
 int funct_char(va_list);
 int funct_number(va_list);
-int funct_rot_13(va_list);
+int funct_rot_13(va_list );
 int match_function(const char *, va_list, st_fmt st_format[]);
 
 #endif
