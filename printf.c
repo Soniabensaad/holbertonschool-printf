@@ -13,6 +13,7 @@ int _printf(const char *format, ...)
 		{"d", funct_number},
 		{"i", funct_number},
 		{"R", funct_rot_13},
+		{"r", funct_reverse},
 		{NULL, NULL}};
 
 	va_list arg;

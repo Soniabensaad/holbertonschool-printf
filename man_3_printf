@@ -24,8 +24,6 @@ Print a single integer.
 Print a decimal number.
 .SH s
 Print a string.
-.SH b
-Print a binary.
 .SH r
 Print reverse.
 .SH R
