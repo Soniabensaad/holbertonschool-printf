@@ -21,7 +21,7 @@ _putchar(str2[j]);
 c++;
 break;
 }
-if (!str1[j])
+if (str1[j + 1]== 0)
 {
 _putchar(s[i]);
 c++;
