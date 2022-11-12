@@ -57,7 +57,7 @@ Using a composite data type such as struct which will contain the declaration of
 
 So the format is a string which characters will be printed without modification (literally), until the string found the format specifiers which start with the % character, and when there is a match between the specifier in the struct and in the format it will indicate the location to the function and this function will print out the string, character or Number, depends the function.
 So this is an example of a struct that will call different functions for printing: char, string and numbers depending on the match.
-![image](https://user-images.githubusercontent.com/113900693/201482762-b7d2d5b7-82e5-429c-96ea-79cc31583787.png)
+![image](https://user-images.githubusercontent.com/113900693/201486565-07a028bb-d93f-4c08-bbe6-f2b49578ffe3.png)
 
 This is example of the string format with the specifiers and the arguments as well.
 
