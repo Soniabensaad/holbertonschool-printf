@@ -6,7 +6,7 @@ Then and return the number of characters it is going to print, in case of athe c
 
 ![image](https://user-images.githubusercontent.com/113900693/201482531-2929075e-c47d-4481-ad34-5d370a423f12.png)
 
-# Printf working principle
+# Printf principle
 
 ![printf working principle](https://user-images.githubusercontent.com/113900693/201485162-2d8232b0-a926-495f-9b0a-f88b333888c6.png)
 
@@ -50,7 +50,7 @@ A format specifier follows this prototype:
 | `f` | `	Decimal floating point` | 231.45 |
 | `%` | `A % followed by another % character will write a single % to the stream` |% |
 
-## image 
+## How does it work
 
 Using a composite data type such as struct which will contain the declaration of a char pointer *fmt and a pointer to a function called *func, this will be receiving a type val_list which will be the list of arguments from format, that will be printed in case there is a match between the struct first argument (fmt) and the format.
 ![image](https://user-images.githubusercontent.com/113900693/201485357-5d374d9a-30cb-4d8c-a715-601f66ec621c.png)
