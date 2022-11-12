@@ -53,7 +53,7 @@ A format specifier follows this prototype:
 ## image 
 
 Using a composite data type such as struct which will contain the declaration of a char pointer *fmt and a pointer to a function called *func, this will be receiving a type val_list which will be the list of arguments from format, that will be printed in case there is a match between the struct first argument (fmt) and the format.
-![image](https://user-images.githubusercontent.com/113900693/201485265-d7b04d41-2b68-4b05-a31a-a3d53e172c58.png)
+![image](https://user-images.githubusercontent.com/113900693/201485357-5d374d9a-30cb-4d8c-a715-601f66ec621c.png)
 
 So the format is a string which characters will be printed without modification (literally), until the string found the format specifiers which start with the % character, and when there is a match between the specifier in the struct and in the format it will indicate the location to the function and this function will print out the string, character or Number, depends the function.
 So this is an example of a struct that will call different functions for printing: char, string and numbers depending on the match.
