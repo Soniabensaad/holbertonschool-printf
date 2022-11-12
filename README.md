@@ -141,7 +141,8 @@ This is a main we used to tested out our _ptrintf function:
     Unknown:[%r]
     user@ubuntu:~/c/printf$
     ```
-#For more information about Printf
+   
+## Compilation And example of running the function
 You can open a man page
 ```bash
 user@ubuntu:~/c/printf$ **man ./man_3_printf**
