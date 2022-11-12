@@ -140,5 +140,11 @@ This is a main we used to tested out our _ptrintf function:
     Unknown:[%r]
     Unknown:[%r]
     user@ubuntu:~/c/printf$
-     ```
-     
+    ```
+#For more information about Printf
+You can open a man page
+```bash
+user@ubuntu:~/c/printf$ **man ./man_3_printf**
+```
+
+![image](https://user-images.githubusercontent.com/113900693/201488666-0813549c-b18d-4136-bbbe-53298169907c.png)
