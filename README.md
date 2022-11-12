@@ -62,5 +62,77 @@ Len is going to be the the number of characters the function _printf is going to
 This will be the output:
 ![image](https://user-images.githubusercontent.com/113900693/201483572-06b7ea14-9e16-4e9f-a3ac-6789c213dd9c.png)
 
+## Examples of the function that match the characters
 
+This is the function that finds the match between the char ("c","s","d","i", "%") in struct st_format and the format string. and also if there is not match it will print the % and the next character that is different to the ones in the struct
 
+![image](https://user-images.githubusercontent.com/113900693/201484666-9bad4933-ea5f-4c4c-9514-84f48417c801.png)
+
+# Compilation And example of running the function
+our code is compiled this way:
+```bash
+gcc -Wall -Werror -Wextra -pedantic *.c
+```
+This is a main we used to tested out our _ptrintf function:
+
+```bash
+    #include <limits.h>
+    #include <stdio.h>
+    #include "holberton.h"
+
+    /**
+     * main - Entry point
+     *
+     * Return: Always 0
+     */
+    int main(void)
+    {
+        int len;
+        int len2;
+        unsigned int ui;
+        void *addr;
+
+        len = _printf("Let's try to printf a simple sentence.\n");
+        len2 = printf("Let's try to printf a simple sentence.\n");
+        ui = (unsigned int)INT_MAX + 1024;
+        _printf("Length:[%d, %i]\n", len, len);
+        printf("Length:[%d, %i]\n", len2, len2);
+        _printf("Negative:[%d]\n", -762534);
+        printf("Negative:[%d]\n", -762534);
+        _printf("Character:[%c]\n", 'H');
+        printf("Character:[%c]\n", 'H');
+        _printf("String:[%s]\n", "I am a string !");
+        printf("String:[%s]\n", "I am a string !");
+        len = _printf("Percent:[%%]\n");
+        len2 = printf("Percent:[%%]\n");
+        _printf("Len:[%d]\n", len);
+        printf("Len:[%d]\n", len2);
+        _printf("Unknown:[%r]\n");
+        printf("Unknown:[%r]\n");
+        return (0);
+    }
+   ```
+   compile and run the executable:
+   
+  ```bash
+  user@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -Wno-format *.c
+    user@ubuntu:~/c/printf$ ./printf
+    Let's try to printf a simple sentence.
+    Let's try to printf a simple sentence.
+    Length:[39, 39]
+    Length:[39, 39]
+    Negative:[-762534]
+    Negative:[-762534]
+    Character:[H]
+    Character:[H]
+    String:[I am a string !]
+    String:[I am a string !]
+    Percent:[%]
+    Percent:[%]
+    Len:[12]
+    Len:[12]
+    Unknown:[%r]
+    Unknown:[%r]
+    user@ubuntu:~/c/printf$
+     ```
+     
