@@ -3,12 +3,17 @@ This is a a custom version of the printf fuction, which have the most basic func
 # DESCRIPTION
 The printf function is a powerful device for printing variety of numbers and characters stored in variables.
 Then and return the number of characters it is going to print, in case of athe char will be just one.
+
 ![image](https://user-images.githubusercontent.com/113900693/201482531-2929075e-c47d-4481-ad34-5d370a423f12.png)
+
 # Printf working principle
-![printf working principle](https://user-images.githubusercontent.com/113900693/201482353-2107ceb5-5c61-4148-8aed-e676c34bfb46.png)        
+
+![printf working principle](https://user-images.githubusercontent.com/113900693/201485162-2d8232b0-a926-495f-9b0a-f88b333888c6.png)
+
 printf or print function in C takes a formatting string and couple of optional variables as input and outputs strings to console while converting input variables to strings.
 
 #Printf Flowchart
+
 ![image](https://user-images.githubusercontent.com/113900693/201482684-77f7b2a7-ec50-44cc-9422-76737c596cf5.png)
 
 # Printf
@@ -48,7 +53,7 @@ A format specifier follows this prototype:
 ## image 
 
 Using a composite data type such as struct which will contain the declaration of a char pointer *fmt and a pointer to a function called *func, this will be receiving a type val_list which will be the list of arguments from format, that will be printed in case there is a match between the struct first argument (fmt) and the format.
-![redme printf](https://user-images.githubusercontent.com/113900693/201482478-54ec4188-87c4-4a59-89f6-c8cd9dd491dc.PNG)
+![image](https://user-images.githubusercontent.com/113900693/201485265-d7b04d41-2b68-4b05-a31a-a3d53e172c58.png)
 
 So the format is a string which characters will be printed without modification (literally), until the string found the format specifiers which start with the % character, and when there is a match between the specifier in the struct and in the format it will indicate the location to the function and this function will print out the string, character or Number, depends the function.
 So this is an example of a struct that will call different functions for printing: char, string and numbers depending on the match.
